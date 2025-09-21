@@ -9,7 +9,6 @@ features={"src/test/resources/Features"},
 glue={"StepDefinition"},
 plugin= {"pretty","html:target/htmlreport.html"}
 )
-public class CucumberTestRunner extends AbstractTestNGCucumberTests {
 
-	
+public class CucumberTestRunner extends AbstractTestNGCucumberTests{	
 }

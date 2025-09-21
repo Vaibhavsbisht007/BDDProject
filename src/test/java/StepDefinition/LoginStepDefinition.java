@@ -22,16 +22,15 @@ public class LoginStepDefinition {
 	   driver.get("https://www.saucedemo.com/");	
 	}
 
-	@When("user enter the user_name and Password")
-	public void user_enter_the_user_name_and_password() {	  
-		driver.findElement(By.id("user-name")).sendKeys("standard_user");
-		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+	@When("user enter the {string} and {string}")
+	public void user_enter_the_user_name_and_password(String user_name, String Password) {	  
+		driver.findElement(By.id("user-name")).sendKeys(user_name);
+		driver.findElement(By.id("password")).sendKeys(Password);		
 	}
 	
 	@And("user click on the Button")
 	public void user_click_on_the_button() {
-	driver.findElement(By.id("login-button")).click();
-	
+	driver.findElement(By.id("login-button")).click();	
 	}
 
 	
