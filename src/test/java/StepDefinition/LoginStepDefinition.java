@@ -43,7 +43,7 @@ public void user_log_in_successfully() {
 	}
 	@And("close the browser")
 	public void close_the_browser() {
-		driver.close();
+		driver.quit();
 		
 	}
 	
